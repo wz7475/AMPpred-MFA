@@ -7,7 +7,7 @@ from .models.Model import predict, load_model
 from .models.AMPpred_MFA import Model, Config
 
 
-def easy_predict(fastas, model_path, vocab_path):
+def easy_predict(fastas, model_path, vocab_path) -> pd.DataFrame:
     """Easy prediction for mixed model(AMPpred_MFA) from fastas
 
     Args:
@@ -59,3 +59,4 @@ def easy_predict_from_file(fasta_file, model_path, vocab_path):
     """
     fastas = load_dataset(fasta_file)
     return easy_predict(fastas, model_path, vocab_path)
+
