@@ -1,3 +1,13 @@
+# AMPpred-MFA
+remember to clone **recursively** or init submodules after cloning
+
+please read `experiments_tools/README.md`
+
+**environment**
+- python 3.10
+- `requirements.txt`
+
+# old readme
 #### Directory Structure
 
 ```
