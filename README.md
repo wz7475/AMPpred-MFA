@@ -7,6 +7,9 @@ please read `experiments_tools/README.md`
 - python 3.10
 - `requirements.txt`
 
+**this model does not support sequences shorter than 2, due to batch prediction and lack of error handling - this model
+is disqualified from task 1 and 2 - it would require meaningful amount of work for model debugging and fixing**
+
 # old readme
 #### Directory Structure
 

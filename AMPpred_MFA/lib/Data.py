@@ -27,8 +27,8 @@ def load_fasta_from_str(fastas, sep='\n'):
                 lst_fastas.append((name, sequence))
             else:
                 i += 1
-    except Exception:
-        raise ValueError('Fasta file format error or inaccessible!')
+    except Exception as e:
+        raise ValueError('Fasta file format error or inaccessible!', e)
     return np.array(lst_fastas)
 
 
