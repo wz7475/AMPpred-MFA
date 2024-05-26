@@ -36,7 +36,7 @@ def easy_predict(fastas, model_path, vocab_path) -> pd.DataFrame:
         fastas[:, 1], config.batch_size, shuffle=False)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     result = predict(model, data_iter, seqs_iter, device)
-    names_sequences = ['\r\n'.join(i) for i in fastas]
+    names_sequences = [''.join(i) for i in fastas]
     df_result = pd.DataFrame(result).transpose()
     df_result = pd.concat(
         [pd.DataFrame(names_sequences), df_result], axis=1)
