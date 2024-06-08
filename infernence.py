@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
 
     result = easy_predict_from_file(args.fasta_file, args.model_path, args.vocab_path)
-    result.to_csv(args.out_path)
+    result.to_csv(args.out_path, index=False)
 
 if __name__ == "__main__":
     main()

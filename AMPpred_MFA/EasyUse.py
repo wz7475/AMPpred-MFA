@@ -43,6 +43,7 @@ def easy_predict(fastas, model_path, vocab_path) -> pd.DataFrame:
     df_result.columns = ['Sequence', 'Class', 'Probability', 'Motif']
     df_result['Class'] = df_result['Class'].apply(
         lambda x: 'AMPs'if x == 1 else 'Non-AMPs')
+    df_result.drop("Motif", axis=1, inplace=True)
     return df_result
 
 
