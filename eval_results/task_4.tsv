@@ -1,2 +1,2 @@
-distinguished	all	score
-0	50	0.12502212877500007
+distinguished	all	score	auc_pr	auc_roc
+0	50	0.12502212877500007	0.5205081654105082	0.5086
